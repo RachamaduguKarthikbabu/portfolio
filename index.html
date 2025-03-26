@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risheet's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Karthik Babu</h1>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showTab('about')">About Me</a></li>
+            <li><a href="#" onclick="showTab('certifications')">Certifications</a></li>
+            <li><a href="#" onclick="showTab('skills')">Skills</a></li>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tab Content -->
+    <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Enthusiastic Cybersecurity student with a soild foundation in Java, Python and C and a proven ability to work effectively in collaborative teams. </p>
+    </section>
+
+
+    <section id="certifications" class="tab-content" style="display: none;">
+        <h2>Certifications</h2>
+        <div class="certificate">
+            <img src="Certificate 2.png" alt="Python Programming">
+            <p>Python programming</p>
+        </div>
+        <div class="certificate">
+            <img src="Certificate 1.png">
+            <p>Advanced C++ Programming - April 1, 2024</p>
+        </div>
+    </section>
+
+    <section id="skills" class="tab-content" style="display: none;">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Java, Python, C</li>
+            <li><strong>Web Technologies:</strong> HTML</li>
+            <li><strong>Object-Oriented Programming</strong></li>
+            <li><strong>Linux</strong></li>
+            <li><strong>Data Structures and Algorithms</strong></li>
+            <li><strong>Design Software:</strong> Photoshop, Premiere Pro</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="tab-content" style="display: none;">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:karthikrachamadugu59@gmail.com">karthikrachamadugu59@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/RachamaduguKarthikbabu" target="_blank">Karthik Babu</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/karthik-babu-rachamadugu-845a022b9" target="_blank">Karthik Babu</a></p>
+    </section>
+
+    <!-- JavaScript for Tab Navigation -->
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
